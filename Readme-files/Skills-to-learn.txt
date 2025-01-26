@@ -1,0 +1,37 @@
+List of the skills to learn in order to complete the project.
+
++++++++1. How to open the window?+++++++
++++++++2. How to name the window?+++++++
++++++++3. How to render the text on window?+++++++
++++++++4. How to make pixel art?+++++++
+5. How to make a sprit?
+6. How to animate the sprit?
+7. How to display img on window?
+8. How to move img acros the window?
+9. Edge detection and colision detection.
+10. How to emulate the light in mine?
+11. How to make a scownoring system?
+12. How game gonna end (death or getting to the final point).
+13. How to generate enemies.
+14. How to generate items.
+15. How to make 'My Items' tab?
+16. How to add item to my items tab?
+17. How to make my Town tab?
+
+18. How to sale and buy the items in my Town tab?
+19. How to make a progres in the game (updates).
+20. How to make "Options" tab?
+21. How To randomly generate mine layout?
+22. How to play background music?
+23. How to adjus sound volume?
+24. How to play sound FX?
+25. How to scroll the map in the game?
+26. How to enter and exit full screen mode?
+27. How to use different images for different screen resolutions?
+
+28. Use <stdbool.h> properly
+29. Use 'c' vectors properly.
+30. Use 'c' arrays propperly.
+31. Use random number generator propperly
+32. Use <time.h> properly.
+

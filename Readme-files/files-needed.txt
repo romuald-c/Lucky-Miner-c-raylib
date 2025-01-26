@@ -1,0 +1,69 @@
+List of files needed for game.
+
+-----Graphics-----
+1. Floor.
+2. Border of the map.
+3. Destructable squares.    - (Deppend on what can be found benith there, an how hard they are)
+4. None destructable squares.
+5. Main character sprite (animated) with transparency.
+6. Teleport to Town.
+6. Entry to the level.
+7. entry to the next level.
+6. Tools.
+    Hammers.
+    Pickaxe -   kilof
+    Detonator.
+    Electric Hammers.
+    Pneumatic Hammers.
+    Minimg Combine.
+    Dynamite.
+    TNT.
+    Backpack.
+    Wheelbarow.
+    Shovel
+    Echo locators (see through the walls);
+7. Items (Findings).
+    Gold sand.
+    Gold rocks.
+    Gold bars.
+    Gold coins.
+    Silver Ore.
+    Silver bars.
+    Silver coins.
+    Coper Ore.
+    Diamonds.
+    etc.
+8. Enemies.
+    Trols and champions.
+    Goblins.
+    Gousts.
+    Rubers.
+
+
+-----Music-----
+1. Main Theme.
+2. Town Theme.
+3. Goust Theme.
+4. Trols Theme.
+5. Robers Theme.
+6. Goblins Theme.
+
+-----Sounds FX-----
+1. Walking.
+2. Walking in mine (reverbed).
+3. Hammer's hits.
+4. Pickaxe's hits.
+5. Detonator's explosions.
+6. Electric Hammer's sounds.
+7. Pneumatic Hammers.
+8. Minimg Combine's moving and driling sounds.
+9. Dynamite's explosions.
+10. TNT's explosions.
+11. Wheelbarow's squicky sound.
+12. Shovel's sound.
+
+Dilogs
+1. I'm overloaded.
+2. Lets go to work.
+------In Town-----
+1. What can I do for you?

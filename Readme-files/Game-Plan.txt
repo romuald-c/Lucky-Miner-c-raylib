@@ -1,0 +1,13 @@
+Plan and scenarios for 'Lucky Miner' game.
+
+-----Main Character-------
+
+-----Enemies-----------
+
+-----Tools-------
+
+-----Items-----
+
+-----Town-----
+
+-----Mine-----
