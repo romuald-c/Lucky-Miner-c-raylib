@@ -14,14 +14,16 @@ int main(void)
     //-------Start the Game main Loop---------------
     while(!WindowShouldClose())
     {
-        BeginDrawing();                         //From this point we begin to draw.
+        BeginDrawing();
+                                 //From this point we begin to draw.
         ClearBackground(DARKGRAY);              // Setting the background color to  dark gray 
+        
         DrawText("Welcome to \"Lucky Miner\" Game!", 140, 30, 20, RED);   //Writting the text in the windows 'Hello Louie!' position in the window and the color
+        
+        
         EndDrawing();                           //After this point there is no more drawing.
     }
     CloseWindow();                              //Closing the window.
-
-
 
     return 0;
 }
