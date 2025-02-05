@@ -1,0 +1,9 @@
+
+On Linux
+gcc main.c -lraylib -o miner.lexe
+
+
+On Windows
+gcc main.c -lraylib -lopengl32 -lgdi32 -lwinmm -g -o main.exe
+
+Option -mwindows is for hiding the console during running the program.
