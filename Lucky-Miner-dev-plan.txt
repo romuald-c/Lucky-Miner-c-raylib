@@ -1,0 +1,5 @@
+Plan for making "Lucky Mainer" game.
+
+All game should be made in 'c' and 'raylib'
+
+Game is grid base.
