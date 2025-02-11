@@ -16,7 +16,11 @@ int main(void)
 
     InitWindow(screenX, screenY, "Lucky Miners!");      //opening the window (size 1280x720) with name 'Hello Romuald'
 
+    Texture2D heroMoove = LoadTexture("assets/images/hero02.png");
+
     SetTargetFPS(60);    //Refresh rate (60 Frames Per Second)                              
+
+    Vector2 HeroPos = {screenX / 2, screenY / 2};
 
     //-------Start the Game main Loop---------------
     while(!WindowShouldClose())
@@ -75,6 +79,8 @@ int main(void)
                                  
         ClearBackground(DARKGRAY);              // Setting the background color to  dark gray 
         
+        //DrawTexturePro(heroMoove, { 0.0f, 0.0f, (float)heroMoove.width, (float).height}, {10, 10, 100, 100}, {0, 0}, 0.0f, WHITE);
+        DrawTexture(heroMoove, HeroPos.x, HeroPos.y, WHITE);
         DrawRectangle(700, 300, 500, 80, MAGENTA);
 
         DrawCircle(circCentreX, circCentreY, circSize, GREEN);
@@ -84,6 +90,7 @@ int main(void)
         
         EndDrawing();                           //After this point there is no more drawing.
     }
+    UnloadTexture(heroMoove);
     CloseWindow();                              //Closing the window.
 
     return 0;
