@@ -10,6 +10,7 @@ int main(void)
     int circCentreX = screenX / 2;
     int circCentreY = screenY - 30;
     int speed = 5;
+    int speedcross = 4;
     int speed2 = 1;
     int circSize = 20;
 
@@ -23,23 +24,23 @@ int main(void)
         // moovement of the circle.
         if (IsKeyDown(KEY_RIGHT) && IsKeyDown(KEY_UP) && circCentreX <= screenX - 30 && circCentreY >= 30)
         {
-            circCentreX += speed;
-            circCentreY -= speed;
+            circCentreX += speedcross;
+            circCentreY -= speedcross;
         }
         else if (IsKeyDown(KEY_RIGHT) && IsKeyDown(KEY_DOWN) && circCentreX <= screenX - 30 && circCentreY <= screenY - 30)
         {
-            circCentreX += speed;
-            circCentreY += speed;
+            circCentreX += speedcross;
+            circCentreY += speedcross;
         }
         else if (IsKeyDown(KEY_LEFT) && IsKeyDown(KEY_UP) && circCentreX >= 30 && circCentreY >= 30)
         {
-            circCentreX -= speed;
-            circCentreY -= speed;
+            circCentreX -= speedcross;
+            circCentreY -= speedcross;
         }
         else if (IsKeyDown(KEY_LEFT) && IsKeyDown(KEY_DOWN) && circCentreX >= 30 && circCentreY <= screenY - 30)
         {
-            circCentreX -= speed;
-            circCentreY += speed;
+            circCentreX -= speedcross;
+            circCentreY += speedcross;
         }
 
         else if(IsKeyDown(KEY_UP) && circCentreY >= 30)
