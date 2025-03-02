@@ -7,7 +7,7 @@ int screenY = 720;
 
 int main(void)
 {
-
+    
     int circCentreX = screenX / 2;
     int circCentreY = screenY - 30;
     int speed = 5;
@@ -15,21 +15,26 @@ int main(void)
     int speed2 = 1;
     int circSize = 20;
     int heroIndex = 0;
-
+    int heroPosRecX = 100;
+    int heroPosRecY = 150;
+    int heroGoDirection = 0;
+    
     InitWindow(screenX, screenY, "Lucky Miners!");      //opening the window (size 1280x720) with name 'Hello Romuald'
-
+    
     Texture2D heroMoove = LoadTexture("assets/images/hero02.png");
     //Rectangle heroRec = {0 , 50, heroMoove.width / 9, heroMoove.height / 4};
     
     SetTargetFPS(60);    //Refresh rate (60 Frames Per Second)                              
     
     Vector2 HeroPos = {screenX / 2, screenY / 2};
-    Vector2 HeroPosition2 = {(screenX / 2) - 100, screenY / 2};
+    //    Vector2 HeroPosition2 = {(screenX / 2) - 100, screenY / 2};
     Vector2 HeroAngle = {40, 50};
     
     //-------Start the Game main Loop---------------
     while(!WindowShouldClose())
     {
+        Rectangle heroRec = {heroIndex * 50, heroGoDirection, 50, 50}; 
+        Rectangle heroPosRec = {heroPosRecX , heroPosRecY, 100, 100};            // ------- zanimowac to prosze----------
         // moovement of the circle.
         if (IsKeyDown(KEY_RIGHT) && IsKeyDown(KEY_UP) && circCentreX <= screenX - 30 && circCentreY >= 30)
         {
@@ -69,8 +74,10 @@ int main(void)
             circCentreX += speed;
         }
         // movement of the hero
-        if (IsKeyDown(KEY_O))
+        if (IsKeyDown(KEY_S))
         {
+            heroGoDirection = 50;
+            heroPosRecY += speed;
             heroIndex++;
             if (heroIndex >= HERO_COUNT)
             {
@@ -78,16 +85,36 @@ int main(void)
             }
             
         }
-        if (IsKeyDown(KEY_P))
+        if (IsKeyDown(KEY_W))
         {
+            heroGoDirection = 0;
+            heroPosRecY -= speed;
             heroIndex--;
             if (heroIndex < 0)
             {
                 heroIndex = HERO_COUNT - 1;
-            }
-            
+            }            
         }        
-        
+        if (IsKeyDown(KEY_A))
+        {
+            heroGoDirection = 100;
+            heroPosRecX -= speed;
+            heroIndex--;
+            if (heroIndex < 0)
+            {
+                heroIndex = HERO_COUNT - 1;
+            }            
+        }
+        if (IsKeyDown(KEY_D))
+        {
+            heroGoDirection = 150;
+            heroPosRecX += speed;
+            heroIndex--;
+            if (heroIndex < 0)
+            {
+                heroIndex = HERO_COUNT - 1;
+            }            
+        }        
         
         // Size of the circle.
         if(IsKeyDown(KEY_Z))
@@ -106,8 +133,6 @@ int main(void)
         //DrawTexturePro(heroMoove, { 0.0f, 0.0f, (float)heroMoove.width, (float).height}, {10, 10, 100, 100}, {0, 0}, 0.0f, WHITE);
         DrawRectangle(700, 300, 500, 80, MAGENTA);
         
-        Rectangle heroRec = {heroIndex * 50, 50, 50, 50}; 
-        Rectangle heroPosRec = {100 , 150, 80, 100};            // ------- zanimowac to prosze----------
         //DrawTexture(heroMoove, HeroPos.x, HeroPos.y, WHITE);
         //DrawTexture(heroMoove, 0, 0, WHITE);
         DrawTextureRec(heroMoove, heroRec, HeroPos, WHITE);
