@@ -2,6 +2,9 @@
 On Linux
 gcc main.c -lraylib -o miner.lexe
 
+Linux full wypas
+gcc main.c -lraylib -std=c2x -Wpedantic -Wall -Wextra -o main.out
+
 
 On Windows
 gcc main.c -lraylib -lopengl32 -lgdi32 -lwinmm -g -o main.exe
